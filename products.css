@@ -1,0 +1,247 @@
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 50px;
+    position: sticky;
+    background-color: rgba(22, 2, 100, 0.769);
+    padding-top: 10px;
+}
+
+nav {
+    margin: auto;
+    width: 30%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: auto;
+    background-color: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside {
+    width: 20%;
+    height: 80%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(137, 43, 226, 0.507);
+}
+
+.filter {
+    margin: 10px;
+    padding: 10px;
+}
+
+select {
+    display: none;
+}
+
+/*.filter1:nth-child(odd), .filter2:nth-child(odd), .filter3:nth-child(odd) {
+    color: blue;
+}
+
+.filter1:nth-child(even), .filter2:nth-child(even), .filter3:nth-child(even) {
+    color: grey;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px yellowgreen;
+}*/
+
+main {
+    width: 80%;
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h3 {
+     display: none;
+}
+
+.article {
+    box-shadow: 2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy {
+    margin: auto;
+}
+
+p {
+    margin-top: auto;
+}
+
+button {
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: rgba(22, 2, 100, 0.769);
+    height: 50px;
+}
+
+.back {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    border: solid black 1px;
+    width: auto;
+    background-color: rgb(115, 151, 172);
+    color: rgb(17, 17, 16);
+    z-index: 99%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #wrapper {
+        width: 100%;
+        margin: none;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    aside {
+        width: 15%;
+        padding: 0;
+        margin: 0;
+    }
+    .article {
+        box-shadow: gray 2px;
+    }
+    .buy {
+        padding: auto;
+        display: block;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    main {
+        width: 84%;
+        padding: 0;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h4 {
+        font-size: small;
+    }
+    .buy {
+        padding: auto;
+        display: block;
+        text-align: right;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .filter {
+        margin: 5px;
+        padding: 5px;
+    }
+    main {
+        width: 84%;
+        padding: 0;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    body {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #wrapper {
+        width: 98%;
+        margin: none;
+    }
+    header {
+        width: 100%;
+        height: 5%;
+        padding-bottom: 2%;
+        margin: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    aside {
+        width: auto;
+        margin: none;
+        padding: none;
+    }
+    h4 {
+        font-size: small;
+    }
+    label {
+        font-size: smaller;
+    }
+    .filter {
+        margin: 0px;
+        padding: 5px;
+        display: inline-flex;
+    }
+    .filter1 .filter2 .filter3 {
+        margin-top: 2px;
+        display: inline-block;
+    }
+    input[type="checkbox"] {
+        display: block;
+    }
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: none;
+    }
+    h3 {
+        text-align: center;
+        display: inline;
+        color: rgb(137, 43, 226);
+    }
+    .article {
+        width: 100%;
+        margin:auto;
+        padding: auto;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+}
