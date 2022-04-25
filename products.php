@@ -103,17 +103,35 @@
                         <label for="gray">Gray</label>
                     </div>
                 </div>
-                <select name="filters">Filters
-                    <optgroup label="gender">
-                    <option value="Women"></option>
-                    <option value="Women">
-                    </optgroup>
-                    <optgroup label="size">
-                        
-                    </optgroup>
-                    <optgroup label="color">
-                        
-                    </optgroup>
+                <select name="gender">
+                    <option value="">Select gender</option>
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="girls">Girls</option>
+                    <option value="boys">Boys</option>
+                </select>
+                <select name="size">
+                    <option value="">Select size</option>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <select name="color">
+                    <option value="">Select color</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="gray">Gray</option>
+                    <option value="brown">Brown</option>
+                    
                 </select>
             </aside>
             
@@ -124,7 +142,7 @@
                         <h4>Short-Sleeve Nightdress</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pr1.jpg" width="100px" height="170px">
+                        <img src="../../pr1.jpg"> <!--width="100px" height="170px"-->
                         <div class="buy">
                             <p>1300,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -136,7 +154,7 @@
                         <h4>Men's Pyjama Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../prm.jpg" width="100px" height="170px">
+                        <img src="../../prm.jpg">
                         <div class="buy">
                             <p>1590,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -148,7 +166,7 @@
                         <h4>Long-Sleeve Jogger PJ Pants Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pr3.jpg" width="100px" height="170px">
+                        <img src="../../pr3.jpg">
                         <div class="buy">
                             <p>1500,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -160,7 +178,7 @@
                         <h4>Sleeveless Nightdress</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pr2.jpg" width="100px" height="170px">
+                        <img src="../../pr2.jpg">
                         <div class="buy">
                             <p>1550,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -172,7 +190,7 @@
                         <h4>Men's Pyjama Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pm.jpg" width="100px" height="170px">
+                        <img src="../../pm.jpg">
                         <div class="buy">
                             <p>1590,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -184,7 +202,7 @@
                         <h4>Men's Pyjama Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pm1.jpg" width="100px" height="170px">
+                        <img src="../../pm1.jpg">
                         <div class="buy">
                             <p>1590,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -196,7 +214,7 @@
                         <h4>Girls' Nightdress</h4>
                     </div>
                     <div class="info">
-                        <img src="../../pd.jpg" width="100px" height="170px">
+                        <img src="../../pd.jpg">
                         <div class="buy">
                             <p>2000,00</p>
                             <button class="cart">Add to cart</button>
@@ -208,7 +226,7 @@
                         <h4>Short-Sleeve Shorts Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../bdm.jpg" width="100px" height="170px">
+                        <img src="../../bdm.jpg">
                         <div class="buy">
                             <p>1200,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -220,7 +238,7 @@
                         <h4>Tank Top Shorts Set</h4>
                     </div>
                     <div class="info">
-                        <img src="../../bd.jpg" width="100px" height="170px">
+                        <img src="../../bd.jpg">
                         <div class="buy">
                             <p>1200,00 RSD</p>
                             <button class="cart">Add to cart</button>
@@ -228,9 +246,8 @@
                     </div>
                 </div>
 
-                <div class="back"><a href="#top">Top</a></div>
+                <div id="back"><a href="#top">Top</a></div>
             </main>
-
         </div>
 
         <footer>

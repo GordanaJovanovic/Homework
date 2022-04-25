@@ -8,6 +8,7 @@ header {
     position: sticky;
     background-color: rgba(22, 2, 100, 0.769);
     padding-top: 10px;
+    border-radius: 10px;
 }
 
 nav {
@@ -33,11 +34,12 @@ nav ul li a {
 }
 
 aside {
-    width: 20%;
+    width: 13%;
     height: 80%;
     padding: 10px;
     margin: 10px;
     background-color: rgba(137, 43, 226, 0.507);
+    border-radius: 10px;
 }
 
 .filter {
@@ -49,20 +51,8 @@ select {
     display: none;
 }
 
-/*.filter1:nth-child(odd), .filter2:nth-child(odd), .filter3:nth-child(odd) {
-    color: blue;
-}
-
-.filter1:nth-child(even), .filter2:nth-child(even), .filter3:nth-child(even) {
-    color: grey;
-}
-
-input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px yellowgreen;
-}*/
-
 main {
-    width: 80%;
+    width: 86%;
     padding: 20px;
     margin: 10px;
     display: grid;
@@ -74,7 +64,6 @@ h3 {
 }
 
 .article {
-    box-shadow: 2px;
     margin: 10px;
     padding: 10px;
 }
@@ -83,7 +72,13 @@ h3 {
     text-align: center;
 }
 
+img {
+    width: 50%;
+    height: 90%;
+}
+
 .info {
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -99,6 +94,7 @@ p {
 button {
     margin-bottom: auto;
     cursor: pointer;
+    background-color: rgba(137, 43, 226, 0.507);
 }
 
 button:hover {
@@ -108,17 +104,18 @@ button:hover {
 footer {
     background-color: rgba(22, 2, 100, 0.769);
     height: 50px;
+    border-radius: 10px;
 }
-
-.back {
+#back {
     position: fixed;
     right: 5%;
     bottom: 5%;
     border: solid black 1px;
-    width: auto;
+    width: 30px;
     background-color: rgb(115, 151, 172);
     color: rgb(17, 17, 16);
     z-index: 99%;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -197,32 +194,27 @@ footer {
     }
     .container {
         flex-wrap: wrap;
-        width: 100%;
+        width: 95%;
         margin: none;
         padding: none;
     }
     aside {
-        width: auto;
+        width: 85%;
         margin: none;
         padding: none;
-    }
-    h4 {
-        font-size: small;
-    }
-    label {
-        font-size: smaller;
+        margin-left: 25px;
     }
     .filter {
-        margin: 0px;
-        padding: 5px;
+        display: none;
+    }
+    select {
+        margin: 10px;
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
         display: inline-flex;
-    }
-    .filter1 .filter2 .filter3 {
-        margin-top: 2px;
-        display: inline-block;
-    }
-    input[type="checkbox"] {
-        display: block;
+        text-align: center;
+        font-size: small;
     }
     main {
         width: 100%;
@@ -236,12 +228,10 @@ footer {
         color: rgb(137, 43, 226);
     }
     .article {
-        width: 100%;
-        margin:auto;
-        padding: auto;
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        border: solid silver 1px;
     }
 }
 
-@media only screen and (max-width: 390px) {
-
-}
